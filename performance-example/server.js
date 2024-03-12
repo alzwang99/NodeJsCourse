@@ -23,7 +23,5 @@ app.get("/timer", (req, res) => {
     res.send(`bruh ${process.pid}`)
 });
 
-//The code below will run 3 times because it has the master run it and then the two workers
-//console.log("Running server.js")
 console.log("Worker process started")
 app.listen(3000);
