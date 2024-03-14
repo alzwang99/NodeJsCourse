@@ -27,7 +27,6 @@ const loadPlanetsData = async () => {
             .on("error", (err) => console.error(err))
             .on("end", () => {
                 console.log(`${planets.length} planets found!`)
-                console.log(`${planets}`);
             })
 
         return result
@@ -36,7 +35,11 @@ const loadPlanetsData = async () => {
     }
 };
 
+function getAllPlanets() {
+    return planets;
+}
+
 module.exports = {
     loadPlanetsData,
-    planets,
+    getAllPlanets,
 }
