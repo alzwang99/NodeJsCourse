@@ -11,7 +11,7 @@ const { loadPlanetsData } = require("./models/planets.model")
 const PORT = process.env.PORT || 8000;
 
 // Have to keep encrypted
-const MONGO_URL = 'mongodb+srv://nasa_api:X5wc3DSrZ8GdAl6u@nasanodeproject.urtx0oa.mongodb.net/?retryWrites=true&w=majority&appName=NasaNodeProject'
+const MONGO_URL = 'Blank'
 
 const server = http.createServer(app);
 
